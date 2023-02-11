@@ -27,6 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+.cardContainer:nth-child(2) {
+  margin-top: -20px;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +38,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card-position-up {
+  margin-top: -20px !important;
+}
+
+@media only screen and (max-width: 200px) {
+  /* margin-top: 0px; */
+}
+
+#cardStyling{
+  width:15rem;
+          border-radius:40px;
+          height:18rem
+}
+#position{
+  position: relative;
+}
+
+#roundBalls{
+  background:#DAE9FF;
+  width: 150px;
+  position: absolute;
+  left: 45%;
+  top: 0;
+  height: 150px;
+}
+
+#smallBackground{
+  background: #FFF5DB;
+          width: 15%;
+          position: absolute;
+          left: 0;
+          top: 35%;
+          height: 20%;
+          border-top-left-radius: 100px;
+}
+
+#bigBackground{
+  background: #f4f9ff;
+          width: 70%;
+          position: absolute;
+          right: 0;
+          top: 20%;
+          height: 60%;
+          border-top-left-radius: 100px;
 }

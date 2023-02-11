@@ -6,7 +6,7 @@ function IntroductoryPage() {
   return (
     <Container className="mb-10">
       <Row className="d-flex pb-5 pt-5">
-        <Col className="fs-4">
+        <Col xs={2} sm={3} md={3} lg={5} xl={5} className="fs-4">
           <span className="font-weight-bold ">A+ </span>Studio
         </Col>
         <Col className="d-flex justify-content-between fs-6">
@@ -18,7 +18,9 @@ function IntroductoryPage() {
           <div>Contact</div>
         </Col>
       </Row>
-      <Row className="d-flex align-items-center">
+      <Row className="d-flex align-items-center" id="position">
+        <div className="rounded-circle" id="roundBalls"></div>
+
         <Col>
           <h1>A Digital Product Agency</h1>
           <p className="fs-6 text-secondary">
@@ -31,7 +33,7 @@ function IntroductoryPage() {
           </button>
         </Col>
         <Col>
-          <img src={myImg} width="100%" height="auto" />
+          <img alt="" src={myImg} width="100%" height="auto" />
         </Col>
       </Row>
     </Container>

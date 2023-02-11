@@ -7,19 +7,23 @@ import amazon from "../assets/amazon.png";
 
 function ClientList() {
   return (
-    <Container>
+    <Container className="my-5">
       <Row>
-        <Col className="w-30">
+        <Col xs={3} md={4}>
           <h1>Our Client</h1>
           <div className="text-secondary">
             Several selected clients, who already believed in our services
           </div>
         </Col>
-        <Col className="d-flex justify-content-between w-70">
-          <img src={google} width="150px" height="49px" />
-          <img src={airbnb} width="166px" height="52px" />
-          <img src={uberEats} width="166px" height="28px" />
-          <img src={amazon} width="142px" height="43px" />
+        <Col
+          xs={9}
+          md={8}
+          className="d-flex flex-wrap justify-content-between align-items-center w-70"
+        >
+          <img src={google} width="130px" height="45px" />
+          <img src={airbnb} width="146px" height="48px" />
+          <img src={uberEats} width="146px" height="24px" />
+          <img src={amazon} width="122px" height="40px" />
         </Col>
       </Row>
     </Container>
